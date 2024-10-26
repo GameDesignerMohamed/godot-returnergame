@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtk1jbujhucih"]
+
+[ext_resource type="PackedScene" uid="uid://ckcrsuqv87oji" path="res://maincharacter.tscn" id="1_yb3if"]
+[ext_resource type="Script" path="res://stealthmovement.gd" id="2_744ns"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.114093, 0.685027, 3.06937)
+
+[node name="Main Char" parent="." instance=ExtResource("1_yb3if")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0108929, 0.0138983, -0.000474215)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Main Char"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00323391, 0.00563502, -0.000133991)
+script = ExtResource("2_744ns")

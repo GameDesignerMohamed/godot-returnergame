@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckcrsuqv87oji"]
+
+[ext_resource type="PackedScene" uid="uid://btlw55ebvprlj" path="res://godot_sphere.glb" id="1_s4h6p"]
+[ext_resource type="Texture2D" uid="uid://brqxhhuf7021q" path="res://main.png" id="2_w8cb0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ri21r"]
+albedo_texture = ExtResource("2_w8cb0")
+
+[node name="godot_sphere" instance=ExtResource("1_s4h6p")]
+
+[node name="geometry_0" parent="world" index="0"]
+material_override = SubResource("StandardMaterial3D_ri21r")
